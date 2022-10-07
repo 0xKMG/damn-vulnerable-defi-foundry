@@ -40,6 +40,7 @@ contract SideEntrance is Test {
             address(sideEntranceLenderPool)
         );
         sideEntranceAttack.flashloan();
+        vm.stopPrank();
         /** EXPLOIT END **/
         validation();
     }

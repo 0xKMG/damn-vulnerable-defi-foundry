@@ -76,6 +76,8 @@ contract Compromised is Test {
 
     function testExploit() public {
         /** EXPLOIT START **/
+        address a = vm.addr(1);
+        emit log_address(a);
 
         /** EXPLOIT END **/
         validation();
